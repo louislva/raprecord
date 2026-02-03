@@ -1,0 +1,12 @@
+{
+  "name": "raprecord",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\"",
+    "build": "pnpm --filter client build && pnpm --filter server build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
